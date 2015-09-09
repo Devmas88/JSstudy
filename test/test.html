@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+
+		var showText = function(arg){
+			var newDIV = document.createElement("div");
+			newDIV.innerHTML="<div>" + arg + "</div>";
+			// 생성된 엘리먼트를 추가합니다.
+			showBody = document.getElementById("showBody");
+			document.body.insertBefore(newDIV, showBody);
+		}
+
+	</script>
+</head>
+<body>
+<div id = 'showBody'>
+	
+</div>
+	<script>
+		showText('결과는?');
+	</script>
+</body>
+</html>
