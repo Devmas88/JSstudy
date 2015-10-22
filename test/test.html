@@ -5,17 +5,18 @@
 	<script src='../lib/showText.js'></script>
 	<script src='../lib/log.js'></script>
 	<script src='../lib/hs_stack.js'></script>
-	<script>
+	<script src='../lib/hs_queue.js'></script>
 
-		log('순서',1);
-
-
-	</script>
 </head>
 <body>
-<div id = 'showBody'>
-	
-</div>
-	
+	<script>
+
+		hs_stack.push('a');
+		hs_stack.push('b');
+		hs_stack.pop();
+
+		console.log(arr);
+
+	</script>
 </body>
 </html>
