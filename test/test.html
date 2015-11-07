@@ -10,13 +10,18 @@
 </head>
 <body>
 	<script>
+		function openWin() {
+		    myWindow = window.open("", "", "width=100, height=100");  // Opens a new window
+		}
 
-		hs_stack.push('a');
-		hs_stack.push('b');
-		hs_stack.pop();
+		function resizeWin() {
+		    myWindow.resizeTo(750, 250);                             // Resizes the new window
+		    myWindow.focus();                                    // Sets focus to the new window
+		}
 
-		console.log(arr);
-
+		openWin();
+		resizeWin();
 	</script>
+
 </body>
 </html>
